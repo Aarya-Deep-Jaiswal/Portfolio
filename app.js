@@ -4,7 +4,7 @@ const path = require("path");
 const ejsMate = require("ejs-mate");
 const methodOverride = require("method-override");
 const contact = require("./models/contact.js");
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
 
 app.set("view engine", "ejs");
@@ -15,12 +15,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
 
-main()
-    .then(res => console.log("connected to DB"))
-    .catch(err => console.log(err));
-async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/contact');
-}
+// main()
+//     .then(res => console.log("connected to DB"))
+//     .catch(err => console.log(err));
+// async function main() {
+//     await mongoose.connect('mongodb://127.0.0.1:27017/contact');
+// }
 
 app.listen(8080, () => {
     console.log("Listening on port 8080");
@@ -57,15 +57,15 @@ app.get("/contact", (req, res) => {
 });
 
 app.post("/home", async (req, res) => {
-    let { firstName, lastName, email, message } = req.body;
-    let newContact = new contact({
-        firstName: firstName,
-        lastName:lastName,
-        email:email,
-        message:message,
-    });
-    console.log(newContact);
-    await newContact.save();
+    // let { firstName, lastName, email, message } = req.body;
+    // let newContact = new contact({
+    //     firstName: firstName,
+    //     lastName:lastName,
+    //     email:email,
+    //     message:message,
+    // });
+    // console.log(newContact);
+    // await newContact.save();
     res.redirect("/home");
 })
 
