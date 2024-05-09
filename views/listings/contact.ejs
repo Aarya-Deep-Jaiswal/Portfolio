@@ -1,0 +1,91 @@
+<% layout("layouts/boilerplate") %>
+
+    <body>
+
+
+        <br><br><br>
+        <div style="background-color: rgb(249, 151, 151);" class="form .row">
+            <h3> <b><i style="font-weight: 800;"> Write your Queries here !!</i></b></h3>
+            <form action="/home" method="post" class="row g-3" name="form">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="inputEmail4" name="firstName">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="inputPassword4" name="lastName">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="inputAddress" name="email">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Your Message!</label> <br>
+                    <textarea name="message" id="input" style="height: 7rem; width: 40rem; padding: 0.5rem;"></textarea>
+                </div>
+                <div class="col-12">
+                    <!-- <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" name="check" >
+                        <label class="form-check-label" for="gridCheck">
+                            Check to Continue...
+                        </label>
+                    </div> -->
+                </div>
+                <div class="col-12">
+                    <button style="background-color: red; border: none; margin-top: -0.2rem;" type="submit"
+                        class="btn btn-primary" onclick="return validateForm()">Send</button>
+                </div>
+            </form>
+        </div>
+
+    </body>
+
+    <script>
+
+        function validateForm() {
+            let a = document.forms["form"]["firstName"].value;
+            let b = document.forms["form"]["lastName"].value;
+            let c = document.forms["form"]["email"].value;
+            let d = document.forms["form"]["message"].value;
+
+            if (a == "") {
+                alert("First name must be filled out");
+                return false;
+            }
+
+            if (b == "") {
+                alert("Last Name must be filled out");
+                return false;
+            }
+
+            if (c == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+
+            if (d == "") {
+                alert("Message must be filled out");
+                return false;
+            }
+        }
+
+    </script>
+
+
+    <style>
+        .form {
+            left: 20%;
+            position: relative;
+            width: 50rem;
+            height: 30rem;
+            padding: 1rem;
+            border: 2px solid black;
+            transform: scale(1.1, 1.1);
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+
+        .form label {
+            font-weight: 600;
+        }
+    </style>

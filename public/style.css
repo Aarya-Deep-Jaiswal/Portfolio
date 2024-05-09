@@ -1,0 +1,39 @@
+body{
+    background-color: #e3e9fbe1;
+    height: 100vh;
+}
+
+.navbar {
+    height: 4rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.483) !important;
+}
+
+.side-menu {
+    margin-right: 8rem;
+}
+
+.navbar-nav a {
+    margin-left: 3rem;
+    font-size: 1.1rem;
+}
+
+.navbar-brand {
+    margin-left: 1.2rem;
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.container-fluid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

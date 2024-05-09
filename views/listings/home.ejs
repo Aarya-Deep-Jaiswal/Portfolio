@@ -1,0 +1,116 @@
+<% layout("layouts/boilerplate") %>
+
+    <body>
+        <div class="main">
+            <div class="home-main">
+                <div class="info-outer">
+                    <div class="info">
+                        <h4><i>~~~~Hello</i></h4>
+                        <h1 id="name1">It's <span id="name">Aarya Deep Jaiswal</span> here,</h1>
+                        <h1>Let me tell you who am I?</h1>
+                        <h2>I'm a <span class="auto-type change"></span></h2>
+                        <br>
+                        <p>Full Stack Developer proficient in creating dynamic and responsive web applications with
+                            expertise <br> in both front-end and back-end technologies. Passionate about crafting
+                            seamless
+                            user experiences <br> through innovative design and efficient code implementation.</p>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-danger">Lookout the CV</button>
+                    <a href="https://www.instagram.com/aaryadeep_jaiswal?igsh=d3k1d3dqd2Vtbm9q"> <i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Aaryadeep.Jaiswal01?mibextid=kFxxJD"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/aarya-deep-jaiswal/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Aarya-Deep-Jaiswal"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="photo">
+                    <img src="/images/1.jpg" alt="Image">
+                </div>
+            </div>
+        </div>
+    </body>
+    <style>
+        .home-main {
+            display: flex;
+            position: relative;
+            height: 100%;
+            /* background-color: pink; */
+        }
+
+        .info-outer {
+            position: relative;
+            height: 100%;
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+        }
+
+        .info {
+            margin-left: 5rem;
+            margin-top: 8rem;
+        }
+
+        .photo {
+            position: absolute;
+            height: 100%;
+            right: 2rem;
+            margin-top: 4.5rem;
+        }
+
+        .photo img {
+            height: 30rem;
+            margin-top: 1rem;
+            border-radius: 10px;
+            box-shadow: 3px 4px 4px black;
+        }
+
+        .btn {
+            margin-left: 5rem;
+            width: 10rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 4px 4px 4px violet;
+        }
+
+        #name1 {
+            font-size: 3rem;
+        }
+
+        #name {
+            color: red !important;
+        }
+
+        /* Animation */
+
+        .change {
+            color: red;
+        }
+
+        .fa-brands {
+            font-size: 1.8rem;
+            margin-left: 1rem;
+            position: relative;
+            bottom: -0.5rem;
+            text-decoration: none;
+            color: black;
+        }
+
+        .fa-instagram {
+            margin-left: 2rem;
+        }
+    </style>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed(".auto-type", {
+            strings: ['Full Stack Web Developer', 'Programmer', 'Competitive Coder', 'Traveller', 'Dendrophile', 'Person that you gonna love to know!'],
+            typeSpeed: 100,
+            backSpeed: 1,
+            // typeSpeed:100,
+            loop: true,
+        });
+    </script>
+
+    </html>
