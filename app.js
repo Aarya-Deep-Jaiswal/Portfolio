@@ -4,7 +4,7 @@ const path = require("path");
 const ejsMate = require("ejs-mate");
 const methodOverride = require("method-override");
 const contact = require("./models/contact.js");
-// const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 
 app.set("view engine", "ejs");
@@ -57,14 +57,14 @@ app.get("/contact", (req, res) => {
 });
 
 app.post("/home", async (req, res) => {
-    // let { firstName, lastName, email, message } = req.body;
-    // let newContact = new contact({
-    //     firstName: firstName,
-    //     lastName:lastName,
-    //     email:email,
-    //     message:message,
-    // });
-    // console.log(newContact);
+    let { firstName, lastName, email, message } = req.body;
+    let newContact = new contact({
+        firstName: firstName,
+        lastName:lastName,
+        email:email,
+        message:message,
+    });
+    console.log(newContact);
     // await newContact.save();
     res.redirect("/home");
 })
