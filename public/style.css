@@ -1,5 +1,5 @@
-body{
-    background-color: #e3e9fbe1;
+body {
+    background-color: rgba(255, 255, 255, 0.888);
     height: 100vh;
 }
 
@@ -8,7 +8,9 @@ body{
     display: flex;
     text-align: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.483) !important;
+    background-color: rgba(82, 73, 73, 0.875) !important;
+    opacity: 1;
+    z-index: 100;
 }
 
 .side-menu {
@@ -18,10 +20,16 @@ body{
 .navbar-nav a {
     margin-left: 3rem;
     font-size: 1.1rem;
+    color: white;
 }
 
 .navbar-brand {
     margin-left: 1.2rem;
+}
+
+.navbar-brand img {
+    height: 2.5rem;
+    width: 3rem;
 }
 
 .container-fluid {
@@ -36,4 +44,19 @@ body{
     align-items: center;
     justify-content: center;
 
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
