@@ -1,6 +1,11 @@
 <% layout("layouts/boilerplate") %>
 
+    <div id="bg">
+        <img src="images/bg.png" alt="">
+    </div>
+
     <body>
+
         <h2 id="hey"><i> <span style="color: red;"> Hey!</span> Nice to meet you.</i> </h2>
         <h2 id="feel"> <i> Feeling appraised that you wanna know about me </i> &#128525; !!</h2>
         <h3 id="chick">I'm a passionate full-stack developer hailing from the bustling city of Siliguri, often
@@ -75,6 +80,36 @@
         typewriter.pauseFor(100).start();
     </script> -->
     <style>
+        body {
+            position: relative;
+            z-index: 1;
+        }
+
+        #bg {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            top: 0rem;
+            margin: 0rem;
+            padding: 0rem;
+            left: 0rem;
+            z-index: -1;
+        }
+
+        #bg img {
+            object-fit: fill;
+            height: 100%;
+            width: 100%;
+            margin: 0rem;
+            position: fixed;
+            z-index: -10;
+            opacity: 0.1;
+            left: 0rem;
+            padding: 0rem;
+        }
+
+
         #hey {
             font-size: 2.5rem;
             margin-top: 1.6rem;

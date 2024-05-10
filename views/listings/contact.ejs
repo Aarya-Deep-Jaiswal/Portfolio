@@ -1,10 +1,15 @@
 <% layout("layouts/boilerplate") %>
 
+<div id="bg">
+    <img src="images/bg.png" alt="">
+</div>
+
+
     <body>
 
 
         <br><br><br>
-        <div style="background-color: rgb(249, 151, 151);" class="form .row">
+        <div style="background-color: rgba(183, 176, 176, 0.814);" class="form .row">
             <h3> <b><i style="font-weight: 800;"> Write your Queries here !!</i></b></h3>
             <form action="/home" method="post" class="row g-3" name="form">
                 <div class="col-md-6">
@@ -73,6 +78,37 @@
 
 
     <style>
+
+body {
+            position: relative;
+            z-index: 1;
+        }
+
+        #bg {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            top: 0rem;
+            margin: 0rem;
+            padding: 0rem;
+            left: 0rem;
+            z-index: -1;
+        }
+
+        #bg img {
+            object-fit: fill;
+            height: 100%;
+            width: 100%;
+            margin: 0rem;
+            position: fixed;
+            z-index: -10;
+            opacity: 0.2;
+            left: 0rem;
+            padding: 0rem;
+        }
+
+
         .form {
             left: 20%;
             position: relative;

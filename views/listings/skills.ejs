@@ -1,5 +1,11 @@
 <% layout("layouts/boilerplate") %>
 
+
+    <div id="bg">
+        <img src="images/bg.png" alt="">
+    </div>
+
+
     <body>
 
         <br>
@@ -252,7 +258,36 @@
     <style>
         /* For All Cards */
 
-        h2{
+        body {
+            position: relative;
+            z-index: 1;
+        }
+
+        #bg {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            top: 0rem;
+            margin: 0rem;
+            padding: 0rem;
+            left: 0rem;
+            z-index: -1;
+        }
+
+        #bg img {
+            object-fit: fill;
+            height: 100%;
+            width: 100%;
+            margin: 0rem;
+            position: fixed;
+            z-index: -10;
+            opacity: 0.2;
+            left: 0rem;
+            padding: 0rem;
+        }
+
+        h2 {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
@@ -579,5 +614,14 @@
         .dsa img {
             border-radius: 20px;
             padding-left: 7.5px;
+        }
+
+        h2 {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 350;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
         }
     </style>

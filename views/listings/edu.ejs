@@ -1,9 +1,16 @@
 <% layout("layouts/boilerplate")%>
 
+    <div id="bg">
+        <img src="images/bg.png" alt="">
+    </div>
+
     <body>
         <br>
 
-        <h2 style="font-size: 2.5rem; text-decoration: underline; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: red;"> <i><b>My Educational Qualifications are as follows:</b></i></h2> <br>
+        <h2
+            style="font-size: 2.5rem; text-decoration: underline; color: red;">
+            <i><b>My Educational Qualifications are as follows:</b></i>
+        </h2> <br>
         <div class="card mb-3 first">
             <div class="row g-0">
                 <div class="col-md-8">
@@ -19,7 +26,8 @@
                                 Science and Engineering <br>
                                 Siliguri Institute of Technology, <br> Siliguri, India. <br>
                                 Expected Graduation: 2025</small></p>
-                        <a href="https://www.sittechno.org/index.html" class="btn btn-primary">Click to visit &#128072;</a>
+                        <a href="https://www.sittechno.org/index.html" class="btn btn-primary">Click to visit
+                            &#128072;</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -62,10 +70,13 @@
                 <div class="col-md-8">
                     <div class="card-body bdj">
                         <h5 class="card-title">Birla Divya Jyoti</h5>
-                        <p class="card-text">BIRLA DIVYA JYOTI SCHOOL is a co-educational English Medium School at UTTORAYON TOWNSHIP, SILIGURI, set up by BIRLA VIDYA VIHAR TRUST under the aegis of the BIRLA GROUP.This group has a successful track record of running some of the Finest Educational Institutions across the Country.</p>
+                        <p class="card-text">BIRLA DIVYA JYOTI SCHOOL is a co-educational English Medium School at
+                            UTTORAYON TOWNSHIP, SILIGURI, set up by BIRLA VIDYA VIHAR TRUST under the aegis of the BIRLA
+                            GROUP.This group has a successful track record of running some of the Finest Educational
+                            Institutions across the Country.</p>
                         <p class="card-text"><small class="text-body-secondary">Secondary (Class 10) <br>
-                            Birla Divya Jyoti, Siliguri, <br> West Bengal, India. <br>
-                            Year of Completion: 2019</small></p>
+                                Birla Divya Jyoti, Siliguri, <br> West Bengal, India. <br>
+                                Year of Completion: 2019</small></p>
                         <a href="https://birladivyajyoti.com/" class="btn btn-primary">Click to visit &#128072;</a>
                     </div>
                 </div>
@@ -78,6 +89,35 @@
     </body>
 
     <style>
+        body {
+            position: relative;
+            z-index: 1;
+        }
+
+        #bg {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            top: 0rem;
+            margin: 0rem;
+            padding: 0rem;
+            left: 0rem;
+            z-index: -1;
+        }
+
+        #bg img {
+            object-fit: fill;
+            height: 100%;
+            width: 100%;
+            margin: 0rem;
+            position: fixed;
+            z-index: -10;
+            opacity: 0.2;
+            left: 0rem;
+            padding: 0rem;
+        }
+
         .card {
             background-color: white;
             width: 100%;
@@ -92,13 +132,13 @@
             margin: 3rem 2rem 0rem 7rem;
         }
 
-        .second img{
+        .second img {
             position: relative;
             transform: scale(1.2, 1.2);
             margin: 3rem 2rem 0rem 7rem;
         }
 
-        .third img{
+        .third img {
             position: relative;
             /* transform: scale(1.1, 1.1); */
             height: 16rem;
@@ -106,24 +146,33 @@
             margin: 2rem 0rem 3rem 7rem;
         }
 
-        .card h5{
+        .card h5 {
             font-size: 2rem;
         }
 
-        .sit a{
+        .sit a {
             margin-top: -1.2rem;
         }
 
-        .dav a{
+        .dav a {
             margin-top: -1.2rem;
         }
 
-        .card:hover{
-            transform: scale(1.02,1.02);
+        .card:hover {
+            transform: scale(1.02, 1.02);
         }
 
-        .card a{
+        .card a {
             background-color: red !important;
             border: none;
+        }
+
+        h2 {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 350;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
         }
     </style>
