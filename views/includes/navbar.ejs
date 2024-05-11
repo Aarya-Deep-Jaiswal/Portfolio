@@ -1,13 +1,18 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary mt-0">
     <div class="container-fluid">
         <a class="navbar-brand" href="/home">
-            <img src="images/logo.jpg"
-                alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> &nbsp;&nbsp;
+            <img src="images/logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            &nbsp;&nbsp;
             <span style="color: white;"> Portfolio</span>
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="side-menu">
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+            <div class="collapse navbar-collapse -sm" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
                     <a class="nav-link" aria-current="page" href="/home">Home</a>
                     <a class="nav-link" href="/about">About</a>
                     <a class="nav-link" href="/skills">Skills</a>
@@ -20,7 +25,48 @@
     </div>
 </nav>
 
-<!-- <script>
-    let btn=document.getElementsByClassName("nav-link");
-    console.log(btn);
-</script> -->
+<style>
+    @media (max-width: 450px) {
+        /* Adjust margins for smaller screens */
+        .navbar {
+            margin-left: 0;
+            margin-right: 0;
+            position: relative; /* Ensure relative positioning */
+        }
+
+        /* Move the toggler button to the right */
+        .navbar-toggler {
+            position: absolute;
+            right: 1rem;
+            top: 0.7rem; /* Align to the top */
+            background-color: rgb(168, 168, 168) ;
+        }
+
+        .navbar-toggler-icon{
+            color: white !important;
+        }
+
+        /* Use absolute positioning for the collapsible content */
+        .navbar-collapse {
+            position: absolute;
+            top: 100%; /* Position below the toggler button */
+            right: 0; /* Align to the right */
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        .nav-link{
+            color: rgb(213, 203, 203) !important;
+            font-weight: 700;
+        }
+
+        .navbar-nav{
+            background-color: rgba(37, 37, 37, 0.752);
+            display: flex;
+            margin-right: 0rem;
+            padding-right: 3rem;
+        }
+
+    }
+</style>
+
+

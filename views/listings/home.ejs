@@ -12,7 +12,7 @@
                     <div class="info">
                         <h4><i>~~~~Hello</i></h4>
                         <h1 id="name1">It's <span id="name">Aarya Deep Jaiswal</span> here,</h1>
-                        <h1>Let me tell you who am I?</h1>
+                        <h1 id="let">Let me tell you who am I?</h1>
                         <h2>I'm a <span class="auto-type change"></span></h2>
                         <br>
                         <p>Full Stack Developer proficient in creating dynamic and responsive web applications with
@@ -21,8 +21,8 @@
                             user experiences <br> through innovative design and efficient code implementation.</p>
                     </div>
                     <br>
-                    <a href="https://drive.google.com/file/d/1VJD9dKDLp538asq53I3IglwklZhoa7Q2/view?usp=sharing">
-                        <button type="button" class="btn btn-danger">Checkout the CV</button>
+                    <a href="https://drive.google.com/file/d/1ExdleZph4Pl26-UkJAg0VhJrhzRlrC7F/view?usp=sharing">
+                        <button type="button" class="btn btn-danger">Lookout the CV</button>
                     </a>
                     <a href="https://www.instagram.com/aaryadeep_jaiswal?igsh=d3k1d3dqd2Vtbm9q"> <i
                             class="fa-brands fa-instagram"></i></a>
@@ -38,10 +38,107 @@
         </div>
     </body>
     <style>
-     
+        @media (max-width: 450px) {
+
+            /* Adjust photo position */
+            .photo {
+                position: relative;
+                top: -7rem;
+                left: 0.3rem;
+                transform: scale(0.9);
+            }
+
+            /* Adjust info-outer position */
+            .info-outer {
+                margin-top: 1rem;
+                padding: 0;
+                left: 0;
+            }
+
+            /* Adjust heading and name positions */
+            h4 {
+                position: absolute;
+                top: 27.8rem;
+                text-align: center;
+                left: 1rem;
+                font-size: 1.2rem;
+            }
+
+            #name1 {
+                position: absolute;
+                top: 29.3rem;
+                display: inline;
+                width: 22rem;
+                text-align: center;
+                font-size: 1.5rem !important;
+                left: 0rem;
+            }
+
+            /* Adjust info margin */
+            .info {
+                margin-left: 0;
+                margin-top: 2rem;
+                text-align: center;
+            }
+
+            /* Adjust button margin */
+            .btn {
+                margin: 2rem auto;
+                margin-top: 33.5rem;
+                margin-left: 7rem !important;
+                transform: scale(0.7,0.7);
+            }
+
+            /* Adjust social icons margin */
+            .fa-brands {
+                margin: 0 0.5rem;
+            }
+
+            #let {
+                position: absolute;
+                top: 30rem;
+                font-size: 1.3rem;
+                display: inline;
+                left: 0.9rem;
+                margin-top: 1.2rem;
+            }
+
+            h2 {
+                position: absolute;
+                top: 31.5rem;
+                left: 0.9rem;
+                margin-top: 1.7rem;
+                font-size: 1.1rem;
+                width: 22rem;
+                padding: 0rem;
+            }
+
+            p {
+                position: absolute;
+                top: 35rem;
+                left: 1rem;
+                width: 23rem;
+            }
+
+            .fa-brands{
+                position: relative;
+                top: -1rem;
+                left: 4.1rem;
+            }
+
+            .home-main{
+                margin-top: 0.5rem;
+            }
+        }
+
+
         body {
             position: relative;
             z-index: 1;
+        }
+
+        .main {
+            margin-bottom: 6.8rem;
         }
 
         #bg {
