@@ -80,6 +80,34 @@
         typewriter.pauseFor(100).start();
     </script> -->
     <style>
+        @media (max-width: 450px) {
+
+            #slg {
+                height: 10rem !important;
+                width: 20rem !important;
+                position: relative;
+                left: -19rem !important;
+            }
+
+            .carousel {
+                position: absolute;
+                transform: scale(0.45, 0.45);
+                margin-left: -28.8rem;
+                margin-top: -10rem;
+                margin-bottom: 0rem;
+            }
+
+            body {
+                position: relative;
+                z-index: 1;
+                overflow-x: hidden;
+            }
+
+            .container{
+                overflow-x: hidden;
+            }
+        }
+
         body {
             position: relative;
             z-index: 1;

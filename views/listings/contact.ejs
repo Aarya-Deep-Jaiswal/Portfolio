@@ -1,8 +1,8 @@
 <% layout("layouts/boilerplate") %>
 
-<div id="bg">
-    <img src="images/bg.png" alt="">
-</div>
+    <div id="bg">
+        <img src="images/bg.png" alt="">
+    </div>
 
 
     <body>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-12">
                     <label for="inputAddress2" class="form-label">Your Message!</label> <br>
-                    <textarea name="message" id="input" style="height: 7rem; width: 40rem; padding: 0.5rem;"></textarea>
+                    <textarea name="message" id="input" style="border-radius: 10px;"></textarea>
                 </div>
                 <div class="col-12">
                     <!-- <div class="form-check">
@@ -36,7 +36,7 @@
                         </label>
                     </div> -->
                 </div>
-                <div class="col-12">
+                <div class="col-12 btn">
                     <button style="background-color: red; border: none; margin-top: -0.2rem;" type="submit"
                         class="btn btn-primary" onclick="return validateForm()">Send</button>
                 </div>
@@ -78,8 +78,27 @@
 
 
     <style>
+        @media(max-width:450px) {
 
-body {
+            .form {
+                position: relative;
+                left: 1rem !important;
+                width: 350px !important;
+                margin-top: 5rem !important;
+            }
+
+            #input{
+                width: 315px !important;
+            }
+
+            .btn{
+                position: relative;
+                left: -4.5rem !important;
+            }
+
+        }
+
+        body {
             position: relative;
             z-index: 1;
         }
@@ -124,5 +143,11 @@ body {
 
         .form label {
             font-weight: 600;
+        }
+
+        #input {
+            height: 7rem;
+            width: 40rem;
+            padding: 0.5rem;
         }
     </style>
